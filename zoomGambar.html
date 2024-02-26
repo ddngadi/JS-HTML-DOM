@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript HTML DOM</h2>
+<img id="gambar" src="landscape.jpg" width="100" height="100">
+<br>
+<button id="zoomOut" onClick="fZoomOut()">Zoom Out</button>
+<button id="zoomIn" onClick="fZoomIn()">Zoom In</button>
+
+<script>
+
+const gambar = document.getElementById("gambar")
+
+gambar.src = "https://vignette.wikia.nocookie.net/nickelodeon/images/9/95/Patrick_2018.png/revision/latest?cb=20181201224706"
+
+function fZoomOut() {
+	gambar.width="100";
+	gambar.height="100";
+	alert("Zoom Out!");
+}
+
+function fZoomIn() {
+	gambar.width="200";
+	gambar.height="200";
+	alert("Zoom In");
+}
+</script>
+
+</body>
+</html>
